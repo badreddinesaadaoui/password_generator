@@ -24,7 +24,7 @@ if not os.path.exists("your_passwords"):
 
 while True:
     username = input("Enter your username: ")
-    purpose = input("Enter the purpose for password generation (one word only): ")
+    purpose = input("Enter the purpose for password generation (ex: linkedin, facebook, instagram): ")
     filename = f"your_passwords/{username}_{purpose}.txt"
     if os.path.exists(filename):
         print(f"Username '{username}' for purpose '{purpose}' already exists. Please choose another.")
